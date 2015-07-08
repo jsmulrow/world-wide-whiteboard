@@ -5,9 +5,13 @@
   "main": "index.js",
   "author": "instructors@fullstackacademy.com",
   "scripts": {
-      "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "socket.io": "^1.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.3.7"
   }
 }

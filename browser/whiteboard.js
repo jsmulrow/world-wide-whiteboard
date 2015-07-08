@@ -74,6 +74,10 @@ window.whiteboard = new window.EventEmitter();
 
     });
 
+    whiteboard.clear = function() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    };
+
     whiteboard.draw = function (start, end, strokeColor, shouldBroadcast) {
 
         // Draw the line between the start and end positions
